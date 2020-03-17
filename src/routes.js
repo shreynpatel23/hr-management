@@ -6,6 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import Login from "./login/login";
+import NotificationPrefrences from "./notification-prefrences/notificationPrefrences";
 
 class AppRouter extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class AppRouter extends React.Component {
             component={() => <Redirect to={"/login"} />}
           />
           <Route path={"/login"} component={Login} />
+          <Route path={"/notification-prefrences"} component={NotificationPrefrences} />
         </Switch>
       </Router>
     );

@@ -1,0 +1,34 @@
+@import '../assets/scss/variables.scss';
+
+.heading {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $textColor;
+}
+
+.subheading {
+    font-size: $font-14;
+    font-weight: normal;
+    text-align: center;
+    color: $textColor;
+}
+
+.notificationTab {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: $borderRadius15;
+    background-color: $background;
+    transition: 0.2s;
+}
+.notificationTab:hover {
+    box-shadow: $box-shadow;
+    transform: translate(-3px);
+}
+.warningText {
+    font-size: $font-12;
+    font-weight: normal;
+    text-align: center;
+    color: $error;
+}
