@@ -4,6 +4,7 @@ import Input from "../shared/input/input";
 import Button from "../shared/button/button";
 import CommonStyles from "../shared/sharedStyles.module.scss";
 import { PrimaryButtonStyle, ButtonTextStyle } from "../shared/buttonStyles";
+import { useHistory } from 'react-router-dom';
 
 function Login() {
     const [employeeId, setEmployeeId] = React.useState("");
@@ -12,6 +13,7 @@ function Login() {
         employeeId: '',
         password: ''
     })
+    let history = useHistory();
     function checkEmployeeID() {
         if(!employeeId) {
             setError((error) => ({
@@ -44,6 +46,7 @@ function Login() {
         return;
         }
         console.log('employee ID',employeeId, 'Password', password );
+        history.replace('/notification-prefrences')
     }
     function handelForgotPassword() {
         console.log('forgot password clicked')
@@ -51,7 +54,7 @@ function Login() {
     return (
         <div className={`py-3 px-4 ${CommonStyles.card}`}>
             <div className="py-4">
-                <p className={`${Styles.labelText} mb-0 text-center`}>
+                <p className={`${Styles.heading} mb-0 text-center`}>
                     Login
                 </p>
             </div>
