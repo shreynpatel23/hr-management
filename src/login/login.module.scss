@@ -1,0 +1,14 @@
+@import '../assets/scss/variables.scss';
+
+.labelText {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
+}
+.forgotPasswordText {
+    font-size: $font-12;
+    font-weight: 500;
+    color: $primaryColor;
+    cursor: pointer;
+}

@@ -1,9 +1,13 @@
 import React from 'react';
+import Styles from "./App.module.scss";
+import AppRouter from './routes';
+import Logo from "./shared/logo";
 
 function App() {
   return (
-    <div className="container">
-      <h1 className="mb-0 text-primary p-3 font-weight-bold text-center heading-1">Welcome to Hr Management portal</h1>
+    <div className={`${Styles.background} d-flex align-items-center justify-content-center`}>
+      <Logo />
+      <AppRouter />
     </div>
   );
 }

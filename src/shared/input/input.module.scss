@@ -1,0 +1,65 @@
+@import '../../assets/scss/variables.scss';
+
+.formControl {
+    display: block;
+    width: 350px;
+    padding: 10px 15px;
+    font-size: $font-16;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $textColor;
+    background-clip: padding-box;
+    border-bottom: 0.5px solid $textColor;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formControl::placeholder {
+    font-size: $font-12;
+    text-align: center;
+    color: $textColor;
+}
+
+.error::placeholder {
+    font-size: $font-12;
+    text-align: center;
+    color: $error;
+}
+
+.formControl:focus {
+    outline: none;
+    border-bottom: 0.5px solid $primaryColor;
+
+    .formControl::placeholder {
+        color: $primaryColor
+    }
+}
+
+.error {
+    display: block;
+    width: 350px;
+    padding: 10px 15px;
+    font-size: $font-16;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primaryColor;
+    background-color: $white;
+    background-clip: padding-box;
+    border-bottom: 0.5px solid $error;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.error:focus {
+    outline: none;
+    border-bottom: 0.5px solid $primaryColor;
+    .formControl::placeholder {
+        color: $primaryColor
+    }
+}
