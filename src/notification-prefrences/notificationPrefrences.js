@@ -10,10 +10,10 @@ function NotificationPrefrences() {
     function handelLogin() {
         // handel this function
         console.log('next clicked');
-        history.push('/master-database');
+        history.push('/employee-database');
     }
     return (
-        <div className={`py-4 px-5 ${CommonStyles.card}`}>
+        <div className={`${CommonStyles.card}`}>
              <div className="py-4">
                 <p className={`${Styles.heading} mb-0 text-center`}>
                     Choose your Notification Prefrences.
@@ -23,7 +23,7 @@ function NotificationPrefrences() {
             <div className="py-3">
                 <div className={`${Styles.notificationTab} p-4 d-flex align-items-center`}>
                     <div className="px-2">
-                        <p className="mb-0">Email</p>
+                        <p className={`mb-0 ${Styles.notificationType}`}>Email</p>
                     </div>
                     <div className="px-2 ml-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" id="prefix__tick" width="20" height="20" viewBox="0 0 37.412 37.412"  style={{fill: '#00c726'}}>
@@ -35,7 +35,7 @@ function NotificationPrefrences() {
             <div className="py-3">
                 <div className={`${Styles.notificationTab} p-4 d-flex align-items-center`}>
                     <div className="px-2">
-                        <p className="mb-0">SMS</p>
+                        <p className={`mb-0 ${Styles.notificationType}`}>SMS</p>
                     </div>
                     <div className="px-2 ml-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" id="prefix__tick" width="20" height="20" viewBox="0 0 37.412 37.412"  style={{fill: '#00c726'}}>

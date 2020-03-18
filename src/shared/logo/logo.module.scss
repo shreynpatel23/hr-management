@@ -1,0 +1,16 @@
+.placement {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.imgSize {
+    width: 60px;
+    height: 60px;;
+}
+
+@media screen and (max-width:767px) {
+    .imgSize {
+        width: 30px;
+        height: 30px;
+    }
+}

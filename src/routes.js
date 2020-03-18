@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Login from "./login/login";
 import NotificationPrefrences from "./notification-prefrences/notificationPrefrences";
+import EmployeeDatabase from "./employee-database/employeeDatabase";
 
 class AppRouter extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class AppRouter extends React.Component {
           />
           <Route path={"/login"} component={Login} />
           <Route path={"/notification-prefrences"} component={NotificationPrefrences} />
+          <Route path={"/employee-database"} component={EmployeeDatabase} />
         </Switch>
       </Router>
     );
