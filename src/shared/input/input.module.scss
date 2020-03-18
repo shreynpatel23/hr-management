@@ -63,3 +63,20 @@
         color: $primaryColor
     }
 }
+
+@media screen and (max-width: 767px) {
+    .formControl {
+        width: 300px;
+    }
+    .error {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .formControl {
+        width: 250px;
+    }
+    .error {
+        width: 250px;
+    }
+}

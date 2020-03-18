@@ -4,5 +4,12 @@
     background-color: $white;
     text-align: center;
     border-radius: $borderRadius10;
+    padding: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        padding: 20px;
+    }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from "./App.module.scss";
 import AppRouter from './routes';
-import Logo from "./shared/logo";
+import Logo from "./shared/logo/logo";
 
 function App() {
   return (

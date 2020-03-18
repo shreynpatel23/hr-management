@@ -52,7 +52,7 @@ function Login() {
         console.log('forgot password clicked')
     }
     return (
-        <div className={`py-3 px-4 ${CommonStyles.card}`}>
+        <div className={`${CommonStyles.card}`}>
             <div className="py-4">
                 <p className={`${Styles.heading} mb-0 text-center`}>
                     Login

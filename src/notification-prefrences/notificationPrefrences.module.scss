@@ -14,6 +14,12 @@
     color: $textColor;
 }
 
+.notificationType {
+  font-weight: 500;
+  text-align: left;
+  color: $textColor;
+}
+
 .notificationTab {
     width: 100%;
     text-align: left;
@@ -24,11 +30,38 @@
 }
 .notificationTab:hover {
     box-shadow: $box-shadow;
-    transform: translate(-3px);
+    transform: translateY(-3px);
 }
 .warningText {
     font-size: $font-12;
     font-weight: normal;
     text-align: center;
     color: $error;
+}
+
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: $font-18;
+    }
+    .subheading {
+        font-size: $font-12;
+    }
+    .notificationType {
+        font-size: $font-14;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .heading {
+        font-size: $font-14;
+    }
+    .subheading {
+        font-size: $font-10;
+    }
+    .notificationType {
+        font-size: $font-12;
+    }
+    .warningText {
+        font-size: $font-10;
+    }
 }
