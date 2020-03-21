@@ -21,7 +21,7 @@ function NotificationPrefrences() {
                 <p className={`${Styles.subheading}`}>you can change that in the settings section.</p>
             </div>
             <div className="py-3">
-                <div className={`${Styles.notificationTab} p-4 d-flex align-items-center`}>
+                <div className={`${Styles.notificationTab} d-flex align-items-center`}>
                     <div className="px-2">
                         <p className={`mb-0 ${Styles.notificationType}`}>Email</p>
                     </div>
@@ -33,7 +33,7 @@ function NotificationPrefrences() {
                 </div>
             </div>
             <div className="py-3">
-                <div className={`${Styles.notificationTab} p-4 d-flex align-items-center`}>
+                <div className={`${Styles.notificationTab} d-flex align-items-center`}>
                     <div className="px-2">
                         <p className={`mb-0 ${Styles.notificationType}`}>SMS</p>
                     </div>
@@ -47,7 +47,7 @@ function NotificationPrefrences() {
                     <p className={`${Styles.warningText} mb-0`} >Additional charges may apply</p>
                 </div>
             </div>
-            <div className="py-2">
+            <div className="py-2 d-inline-flex">
                 <Button style={PrimaryButtonStyle} click={handelLogin}>
                     <p className="mb-0" style={ButtonTextStyle}>Next</p>    
                 </Button> 

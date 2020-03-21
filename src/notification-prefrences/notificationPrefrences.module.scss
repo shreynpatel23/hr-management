@@ -24,9 +24,10 @@
     width: 100%;
     text-align: left;
     cursor: pointer;
-    border-radius: $borderRadius15;
+    border-radius: $borderRadius8;
     background-color: $background;
     transition: 0.2s;
+    padding: 20px;
 }
 .notificationTab:hover {
     box-shadow: $box-shadow;
@@ -49,6 +50,10 @@
     .notificationType {
         font-size: $font-14;
     }
+    .notificationTab {
+        padding: 20px;
+        border-radius: $borderRadius8;
+    }
 }
 
 @media screen and (max-width: 321px) {
@@ -63,5 +68,9 @@
     }
     .warningText {
         font-size: $font-10;
+    }
+    .notificationTab {
+        padding: 15px;
+        border-radius: $borderRadius8;
     }
 }

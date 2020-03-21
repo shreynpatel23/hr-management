@@ -52,7 +52,7 @@ function Login() {
         console.log('forgot password clicked')
     }
     return (
-        <div className={`${CommonStyles.card}`}>
+        <div className={`${CommonStyles.Logincard}`}>
             <div className="py-4">
                 <p className={`${Styles.heading} mb-0 text-center`}>
                     Login
@@ -99,7 +99,7 @@ function Login() {
                     </div>
                 </div>
             </form>
-            <div className="py-3">
+            <div className="py-3 d-inline-flex">
                 <Button style={PrimaryButtonStyle} click={handelLogin}>
                     <p className="mb-0" style={ButtonTextStyle}>Login</p>    
                 </Button> 

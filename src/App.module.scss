@@ -1,12 +1,30 @@
 @import './assets/scss/variables.scss';
 
 .background {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background-color: $background;
 }
 
+.logoBranding {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.contentContainer {
+    height: 90%;
+}
+
 @media screen and (max-width: 767px) {
-    .background {
-        padding: 15px;
+    .contentContainer {
+        height: 95%;
+        padding: 15px
+    }
+    .logoBranding {
+        height: 5%;
+        padding: 0;
     }
 }
