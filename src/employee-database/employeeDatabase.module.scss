@@ -1,7 +1,7 @@
 @import '../assets/scss/variables.scss';
 
 .heading {
-    font-size: 24px;
+    font-size: $font-24;
     font-weight: 500;
     text-align: center;
     color: $textColor;
@@ -47,7 +47,7 @@
     outline: none;
 }
 .formControl::placeholder {
-    font-size: 14px;
+    font-size: $font-14;
     text-align: left;
     color: $textColor;
 }

@@ -9,6 +9,7 @@ import Login from "./login/login";
 import NotificationPrefrences from "./notification-prefrences/notificationPrefrences";
 import EmployeeDatabase from "./employee-database/employeeDatabase";
 import PersonalDetails from "./personal-details/personalDetails";
+import Feeds from "./feeds/feeds";
 
 class AppRouter extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class AppRouter extends React.Component {
           <Route path={"/notification-prefrences"} component={NotificationPrefrences} />
           <Route path={"/employee-database"} component={EmployeeDatabase} />
           <Route path={"/personal-details"} component={PersonalDetails} />
+          <Route path={"/feeds"} component={Feeds} />
         </Switch>
       </Router>
     );
