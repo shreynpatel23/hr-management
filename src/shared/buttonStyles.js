@@ -9,6 +9,6 @@ export const PrimaryButtonStyle = {
     background: Colors.PRIMARYCOLOR,
     color: Colors.WHITE,
     borderRadius: '10px',
-    width: '150px'
+    width: '100%'
 }
 

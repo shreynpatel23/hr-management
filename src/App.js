@@ -5,9 +5,13 @@ import Logo from "./shared/logo/logo";
 
 function App() {
   return (
-    <div className={`${Styles.background} d-flex align-items-center justify-content-center`}>
-      <Logo />
-      <AppRouter />
+    <div className={`${Styles.background}`}>
+      <div className={`${Styles.logoBranding}`}>
+        <Logo />
+      </div>
+      <div className={`${Styles.contentContainer}`}>
+        <AppRouter />
+      </div>
     </div>
   );
 }

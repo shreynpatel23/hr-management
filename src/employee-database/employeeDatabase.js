@@ -1,25 +1,30 @@
 import React from 'react';
 import CommonStyles from '../shared/sharedStyles.module.scss';
 import Styles from './employeeDatabase.module.scss';
-import InputStyle from "../shared/input/input.module.scss";
 import FieldTabs from './field-tabs/fieldTabs';
 import { FieldTabsList } from '../constants';
 import Button from '../shared/button/button';
 import { PrimaryButtonStyle, ButtonTextStyle } from '../shared/buttonStyles';
 import FiledList from './field-list/filedList';
 import {Colors} from '../shared/colors';
+import BackButton from '../shared/backButton/backButton';
+import { useHistory } from 'react-router-dom';
 
 
 function EmployeeDatabase() {
     const [selectedFields, setSelectedFields] = React.useState([]);
+    let history = useHistory();
     function handelSelectedTab(value) {
         setSelectedFields(selectedFields.concat(value));
     }
     function handelNext() {
-        console.log('next clicked');
+        history.push('personal-details');
     }
     function handelRemoveField() {
         console.log('remove field clicked');
+    }
+    function handelBack() {
+        history.push('/notification-prefrences');
     }
     return (
         <div className={`${CommonStyles.card}`}>
@@ -75,9 +80,9 @@ function EmployeeDatabase() {
                     </div>
                 </div>
             </div>
-            <div className="py-2 d-flex align-items-center justify-content-between">
+            <div className="py-4 d-flex align-items-center justify-content-between">
                 <div className="px-2">
-                    <p className="mb-0">back</p>
+                    <BackButton click={handelBack}/>
                 </div>
                 <div className="px-2">
                     <Button style={PrimaryButtonStyle} click={handelNext}>

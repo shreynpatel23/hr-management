@@ -1,0 +1,10 @@
+@import '../../assets/scss/variables.scss';
+
+.backText {
+    text-align: left;
+    color: $textColor;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
