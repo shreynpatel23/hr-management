@@ -3,7 +3,7 @@ import React from 'react'
 function Feeds() {
     return (
         <div>
-            <p className="mb-0">welcome to feed page</p>
+            <p className="mb-0">Feed page willl come here</p>
         </div>
     )
 }

@@ -1,0 +1,11 @@
+@import '../assets/scss/variables.scss';
+.background {
+    background: $background;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .background {
+        height: 100vh;
+    }
+}
