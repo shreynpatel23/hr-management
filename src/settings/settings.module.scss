@@ -1,0 +1,12 @@
+@import '../assets/scss/variables.scss';
+
+.settingsBack {
+    height: calc(100vh - 70px);
+}
+
+@media screen and (max-width : 767px) {
+    .settingsBack {
+        height: calc(100vh - 46px);
+        padding: 15px
+    }
+}

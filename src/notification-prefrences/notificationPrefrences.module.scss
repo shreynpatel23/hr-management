@@ -15,9 +15,9 @@
 }
 
 .notificationType {
-  font-weight: 500;
-  text-align: left;
-  color: $textColor;
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
 }
 
 .notificationTab {
@@ -29,10 +29,12 @@
     transition: 0.2s;
     padding: 20px;
 }
+
 .notificationTab:hover {
     box-shadow: $box-shadow;
     transform: translateY(-3px);
 }
+
 .warningText {
     font-size: $font-12;
     font-weight: normal;
@@ -40,19 +42,41 @@
     color: $error;
 }
 
+.editNotification {
+    font-size: $font-16;
+    font-weight: 500;
+    text-align: left;
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+.cancelText {
+    font-size: $font-14;
+    text-align: left;
+    color: $textColor;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
     .heading {
-        font-size: $font-18;
+        font-size: $font-16;
     }
+
     .subheading {
         font-size: $font-12;
     }
+
     .notificationType {
         font-size: $font-14;
     }
+
     .notificationTab {
         padding: 20px;
         border-radius: $borderRadius8;
+    }
+
+    .editNotification {
+        font-size: $font-14;
     }
 }
 
@@ -60,15 +84,19 @@
     .heading {
         font-size: $font-14;
     }
+
     .subheading {
         font-size: $font-10;
     }
+
     .notificationType {
         font-size: $font-12;
     }
+
     .warningText {
         font-size: $font-10;
     }
+
     .notificationTab {
         padding: 15px;
         border-radius: $borderRadius8;
