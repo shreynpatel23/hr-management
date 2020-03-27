@@ -9,6 +9,7 @@
     border-radius: $borderRadius10;
     padding: 35px;
 }
+
 .card {
     width: 900px;
     margin: 0 auto;
@@ -36,12 +37,28 @@
     height: 90%;
 }
 
+.editText {
+    font-size: $font-16;
+    font-weight: 500;
+    text-align: left;
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+
+.cancelText {
+    font-size: $font-14;
+    text-align: left;
+    color: $textColor;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
     .card {
         width: 700px;
         margin: 0 auto;
     }
+
     .Logincard {
         width: 500px;
     }
@@ -52,6 +69,7 @@
         width: 900px;
         margin: 0 auto;
     }
+
     .Logincard {
         width: 500px;
     }
@@ -62,17 +80,23 @@
         padding: 20px;
         width: 100%;
     }
+
     .Logincard {
         width: 100%;
         padding: 15px;
     }
+
     .contentContainer {
         height: 95%;
         padding: 15px
     }
+
     .logoBranding {
         height: 5%;
         padding: 0;
     }
-}
 
+    .editText {
+        font-size: $font-14;
+    }
+}
