@@ -25,6 +25,9 @@ function SideBar(props) {
         history.push(`/application/settings/${value}`)
         setActiveSettingsTab(value);
     }
+    function navigateTo(value) {
+        history.push(`/application/${value}`)
+    }
     useEffect(() => {
         if(params.value === 'feeds') {
             setActiveKey('0')
@@ -49,7 +52,7 @@ function SideBar(props) {
                             eventKey="0"
                             onClick={() => {
                                 setActiveKey('0')
-                                history.push('/feeds');
+                                navigateTo('feeds')
                             }}
                         >
                             <div className="d-flex align-items-center" style={{cursor: 'pointer'}}>
@@ -70,7 +73,7 @@ function SideBar(props) {
                             eventKey="1"
                             onClick={() => {
                                 setActiveKey('1')
-                                history.push('/settings');
+                                navigateTo('settings')
                             }}
                         >
                             <div className="d-flex align-items-center" style={{cursor: 'pointer'}}>
