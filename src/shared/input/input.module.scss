@@ -59,7 +59,13 @@
 .error:focus {
     outline: none;
     border-bottom: 0.5px solid $primaryColor;
+
     .formControl::placeholder {
         color: $primaryColor
     }
+}
+
+.formControl:disabled {
+    background-color: #F0F0F0;
+    cursor: no-drop;
 }
