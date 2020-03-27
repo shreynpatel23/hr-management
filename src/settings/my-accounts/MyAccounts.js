@@ -23,7 +23,7 @@ function MyAccounts() {
           </p>
         </div>
       ) : null}
-      <PersonalDetailsForm disabled={edit} />
+      <PersonalDetailsForm disabled={!edit} />
       {edit ? (
         <div
           className={`d-flex align-items-center justify-content-between py-3`}

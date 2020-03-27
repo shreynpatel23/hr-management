@@ -31,6 +31,7 @@ function PersonalDetailsForm(props) {
                 name="email"
                 id="email"
                 autoComplete="off"
+                disabled={props.disabled}
               />
             </div>
             <div className="form-group py-3">
@@ -40,6 +41,7 @@ function PersonalDetailsForm(props) {
                 name="phoneNumber"
                 id="phoneNumber"
                 autoComplete="off"
+                disabled={props.disabled}
               />
             </div>
           </div>
@@ -51,6 +53,7 @@ function PersonalDetailsForm(props) {
                 name="fullName"
                 id="fullName"
                 autoComplete="off"
+                disabled={props.disabled}
               />
             </div>
             <div className="form-group py-3">
@@ -60,6 +63,7 @@ function PersonalDetailsForm(props) {
                 name="dateOfBirth"
                 id="dateOfBirth"
                 autoComplete="off"
+                disabled={props.disabled}
               />
             </div>
             <div className="form-group py-3">
@@ -69,6 +73,7 @@ function PersonalDetailsForm(props) {
                 name="dateOfJoining"
                 id="dateOfJoining"
                 autoComplete="off"
+                disabled={props.disabled}
               />
             </div>
           </div>
