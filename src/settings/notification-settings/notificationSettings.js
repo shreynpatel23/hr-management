@@ -15,7 +15,7 @@ function NotificationSettings() {
       {!edit ? (
         <div className="py-2 d-flex align-items-center justify-content-end">
           <p
-            className={`mb-0 ${Styles.editNotification}`}
+            className={`mb-0 ${CommonStyles.editText}`}
             onClick={() => setEdit(true)}
           >
             Edit
@@ -121,7 +121,7 @@ function NotificationSettings() {
         <div className={`d-flex align-items-center justify-content-between`}>
           <div className="px-2">
             <p
-              className={`mb-0 ${Styles.cancelText}`}
+              className={`mb-0 ${CommonStyles.cancelText}`}
               onClick={() => setEdit(false)}
             >
               Cancel
