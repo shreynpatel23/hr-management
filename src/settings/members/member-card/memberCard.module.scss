@@ -1,0 +1,33 @@
+@import '../../../assets/scss/variables.scss';
+
+.tableValue {
+    font-size: $font-16;
+    text-align: left;
+    color: $textColor;
+}
+
+.memberCard {
+    width: 100%;
+    padding: 15px;
+    border-radius: $borderRadius8;
+    box-shadow: $box-shadow;
+    background-color: $white;
+}
+
+.dropdown {
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 0;
+    color: $textColor;
+}
+
+.dropdown:focus {
+    outline: none;
+}
+
+@media screen and (max-width:767px) {
+    .memberCard {
+        width: 670px;
+    }
+}
