@@ -1,0 +1,115 @@
+@import '../../assets/scss/variables.scss';
+
+.back {
+    padding: 20px 0 0;
+    height: 100%;
+}
+
+.label {
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
+}
+
+.searchBack {
+    border-radius: $borderRadius8;
+    border: solid 1px $textColor;
+    background-color: $white;
+}
+
+.membersHeading {
+    padding: 15px;
+}
+
+
+.header {
+    font-size: $font-16;
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
+}
+
+.showOnMobile {
+    display: none;
+}
+
+.showonWeb {
+    display: block;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.headerWidth {
+    width: 100%;
+}
+
+.headerHeight {
+    height: 10%;
+}
+
+.paginationBack {
+    border-radius: $borderRadius8;
+    border: solid 1px $textColor;
+    background-color: $white;
+}
+
+.paginationStyle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+
+.activeTab {
+    z-index: 3;
+    padding: 5px;
+    color: $white;
+    background-color: $primaryColor;
+    border: 0;
+}
+
+.nonActiveTab {
+    position: relative;
+    padding: 5px;
+    color: $primaryColor;
+    background-color: $white;
+    border: 1px solid $textColor;
+}
+
+@media screen and (max-width: 767px) {
+    .cardContainer {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .responsiveText {
+        font-size: 14px;
+    }
+
+    .headerWidth {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .showOnMobile {
+        display: block;
+    }
+
+    .showonWeb {
+        display: none;
+    }
+
+    .headerHeight {
+        height: 22%;
+    }
+
+    .cardContainer {
+        height: 68%;
+    }
+}

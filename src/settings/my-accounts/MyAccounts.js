@@ -3,6 +3,7 @@ import CommonStyles from "../../shared/sharedStyles.module.scss";
 import PersonalDetailsForm from "../../shared/personal-details-form/personalDetailsForm";
 import Button from "../../shared/button/button";
 import { PrimaryButtonStyle, ButtonTextStyle } from "../../shared/buttonStyles";
+import classes from "./MyAccounts.module.scss";
 
 function MyAccounts() {
   function handelSaveChanges() {
@@ -12,39 +13,41 @@ function MyAccounts() {
   }
   const [edit, setEdit] = React.useState(false);
   return (
-    <div className={`${CommonStyles.card} py-3`}>
-      {!edit ? (
-        <div className="py-3 d-flex align-items-center justify-content-end">
-          <p
-            className={`mb-0 ${CommonStyles.editText}`}
-            onClick={() => setEdit(true)}
-          >
-            Edit
-          </p>
-        </div>
-      ) : null}
-      <PersonalDetailsForm disabled={!edit} />
-      {edit ? (
-        <div
-          className={`d-flex align-items-center justify-content-between py-3`}
-        >
-          <div className="px-2">
+    <div className={classes.back}>
+      <div className={`${CommonStyles.card} py-3`}>
+        {!edit ? (
+          <div className="py-3 d-flex align-items-center justify-content-end">
             <p
-              className={`mb-0 ${CommonStyles.cancelText}`}
-              onClick={() => setEdit(false)}
+              className={`mb-0 ${CommonStyles.editText}`}
+              onClick={() => setEdit(true)}
             >
-              Cancel
+              Edit
             </p>
           </div>
-          <div className="d-inline-flex">
-            <Button style={PrimaryButtonStyle} click={handelSaveChanges}>
-              <p className="mb-0" style={ButtonTextStyle}>
-                Save
+        ) : null}
+        <PersonalDetailsForm disabled={!edit} />
+        {edit ? (
+          <div
+            className={`d-flex align-items-center justify-content-between py-3`}
+          >
+            <div className="px-2">
+              <p
+                className={`mb-0 ${CommonStyles.cancelText}`}
+                onClick={() => setEdit(false)}
+              >
+                Cancel
               </p>
-            </Button>
+            </div>
+            <div className="d-inline-flex">
+              <Button style={PrimaryButtonStyle} click={handelSaveChanges}>
+                <p className="mb-0" style={ButtonTextStyle}>
+                  Save
+                </p>
+              </Button>
+            </div>
           </div>
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </div>
   );
 }
