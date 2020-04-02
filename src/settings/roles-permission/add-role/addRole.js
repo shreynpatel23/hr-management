@@ -1,6 +1,5 @@
 import React from "react";
 import Styles from "../../../shared/popup.module.scss";
-import CommonStyles from "../../../shared/sharedStyles.module.scss";
 import classes from "./addRole.module.scss";
 import {
   PrimaryButtonStyle,

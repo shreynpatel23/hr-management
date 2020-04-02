@@ -8,7 +8,6 @@ import {
   secondaryButtonStyle,
   secondaryButtonTextStyle
 } from "../../../shared/buttonStyles";
-import CommonStyles from "../../../shared/sharedStyles.module.scss";
 import Button from "../../../shared/button/button";
 import uploadButton from "../../../assets/images/upload.png";
 
