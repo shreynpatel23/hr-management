@@ -1,0 +1,32 @@
+@import '../../assets/scss/variables.scss';
+
+.feedCard {
+    background: $white;
+    width: 100%;
+    border-radius: $borderRadius8;
+}
+
+.cardHeader {
+    background: $cardHeader;
+    padding: 15px;
+    border-top-left-radius: $borderRadius8;
+    border-top-right-radius: $borderRadius8;
+}
+
+.headerText {
+    font-size: $font-16;
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
+}
+
+.imgSize {
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .headerText {
+        font-size: $font-14;
+    }
+}
