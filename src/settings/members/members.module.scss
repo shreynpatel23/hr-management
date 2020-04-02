@@ -64,21 +64,25 @@
     list-style: none;
 }
 
-
 .activeTab {
-    z-index: 3;
-    padding: 5px;
+    padding: 5px 15px;
     color: $white;
     background-color: $primaryColor;
+    border-radius: $borderRadius8;
+    margin: 2px;
     border: 0;
+    cursor: pointer;
 }
 
 .nonActiveTab {
     position: relative;
-    padding: 5px;
+    padding: 5px 15px;
     color: $primaryColor;
     background-color: $white;
+    border-radius: $borderRadius8;
+    margin: 2px;
     border: 1px solid $textColor;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {

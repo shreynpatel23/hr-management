@@ -1,0 +1,42 @@
+@import '../../../assets/scss/variables.scss';
+
+.popUpWidth {
+    width: 600px;
+}
+
+.labelText {
+    font-size: $font-16;
+    text-align: center;
+    color: $textColor;
+}
+
+.formControl {
+    width: 100%;
+    border: 0;
+    padding: 10px 15px;
+    border: 1px solid $textColor;
+    border-radius: $borderRadius8;
+    text-align: left;
+    color: $textColor;
+}
+
+.formControl:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.formControl::placeholder {
+    font-size: $font-14;
+    text-align: left;
+    color: $textColor;
+}
+
+@media screen and (max-width: 767px) {
+    .popUpWidth {
+        width: 100%;
+    }
+
+    .labelText {
+        font-size: $font-14;
+    }
+}

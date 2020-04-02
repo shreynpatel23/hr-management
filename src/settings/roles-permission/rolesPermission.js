@@ -1,10 +1,17 @@
 import React from "react";
 import classes from "./rolesPermission.module.scss";
-import { PrimaryButtonStyle, ButtonTextStyle } from "../../shared/buttonStyles";
+import {
+  PrimaryButtonStyle,
+  ButtonTextStyle,
+  secondaryButtonStyle,
+  secondaryButtonTextStyle
+} from "../../shared/buttonStyles";
 import Button from "../../shared/button/button";
 import RoleCard from "./role-card/roleCard";
+import AddRole from "./add-role/addRole";
 
 function RolesPermission() {
+  const [addRole, setAddRole] = React.useState(false);
   function handleSave() {
     console.log("handle save");
   }
@@ -21,10 +28,10 @@ function RolesPermission() {
             <p className={`mb-0 ${classes.label}`}>Roles and Permission</p>
           </div>
           <div className={`ml-auto `}>
-            <Button style={PrimaryButtonStyle} click={handleSave}>
+            <Button style={secondaryButtonStyle} click={handleSave}>
               <p
                 className={`mb-0 ${classes.responsiveText}`}
-                style={ButtonTextStyle}
+                style={secondaryButtonTextStyle}
               >
                 Save
               </p>
@@ -35,6 +42,7 @@ function RolesPermission() {
               <p
                 className={`mb-0 ${classes.responsiveText}`}
                 style={ButtonTextStyle}
+                onClick={() => setAddRole(true)}
               >
                 Add Role
               </p>
@@ -74,6 +82,12 @@ function RolesPermission() {
           </div>
         </div>
       </div>
+      {addRole ? (
+        <AddRole
+          onCancelAddRole={() => setAddRole(false)}
+          handleAddMember={() => setAddRole(false)}
+        />
+      ) : null}
     </div>
   );
 }
