@@ -10,7 +10,7 @@ import AddMember from "./add-member/addMember";
 function Members() {
   const [activeTab, setActiveTab] = React.useState(1);
   const [toggleAddmember, setToggleAddmember] = React.useState(false);
-  function handelAddMember() {
+  function handleAddMember() {
     setToggleAddmember(true);
     console.log("Add member clicked");
   }
@@ -39,7 +39,7 @@ function Members() {
                     <p className={`mb-0 ${classes.label}`}>Members</p>
                   </div>
                   <div className={`ml-auto ${classes.showOnMobile}`}>
-                    <Button style={PrimaryButtonStyle} click={handelAddMember}>
+                    <Button style={PrimaryButtonStyle} click={handleAddMember}>
                       <p
                         className={`mb-0 ${classes.responsiveText}`}
                         style={ButtonTextStyle}
@@ -70,7 +70,7 @@ function Members() {
                     </div>
                   </div>
                   <div className={`pl-2 ${classes.showonWeb}`}>
-                    <Button style={PrimaryButtonStyle} click={handelAddMember}>
+                    <Button style={PrimaryButtonStyle} click={handleAddMember}>
                       <p
                         className={`mb-0 ${classes.responsiveText}`}
                         style={ButtonTextStyle}

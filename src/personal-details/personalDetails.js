@@ -4,17 +4,16 @@ import BackButton from "../shared/backButton/backButton";
 import { useHistory } from "react-router-dom";
 import CommonStyles from "../shared/sharedStyles.module.scss";
 import { PrimaryButtonStyle, ButtonTextStyle } from "../shared/buttonStyles";
-import Input from "../shared/input/input";
 import Styles from "./personalDetails.module.scss";
 import Logo from "../shared/logo/logo";
 import PersonalDetailsForm from "../shared/personal-details-form/personalDetailsForm";
 
 function PersonalDetails() {
   let history = useHistory();
-  function handelBack() {
+  function handleBack() {
     history.push("/employee-database");
   }
-  function handelNext() {
+  function handleNext() {
     history.push("/application/feeds");
   }
   return (
@@ -36,10 +35,10 @@ function PersonalDetails() {
             className={`py-4 d-flex align-items-center justify-content-between`}
           >
             <div className="px-2">
-              <BackButton click={handelBack} />
+              <BackButton click={handleBack} />
             </div>
             <div className="px-2">
-              <Button style={PrimaryButtonStyle} click={handelNext}>
+              <Button style={PrimaryButtonStyle} click={handleNext}>
                 <p className="mb-0" style={ButtonTextStyle}>
                   Next
                 </p>

@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables.scss';
+
+.back {
+    padding: 20px 0 0;
+    height: 100%;
+}
+
+.label {
+    font-weight: 500;
+    text-align: left;
+    color: $textColor;
+}
+
+.headerHeight {
+    height: 10%;
+}
+
+.contentHeight {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+    .responsiveText {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: $font-14;
+    }
+}

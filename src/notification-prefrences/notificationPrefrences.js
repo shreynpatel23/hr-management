@@ -8,8 +8,8 @@ import Logo from "../shared/logo/logo";
 
 function NotificationPrefrences() {
   let history = useHistory();
-  function handelNotificationPref() {
-    // handel this function
+  function handleNotificationPref() {
+    // handle this function
     console.log("next clicked");
     history.push("/employee-database");
   }
@@ -86,7 +86,7 @@ function NotificationPrefrences() {
             </div>
           </div>
           <div className="py-2 d-inline-flex">
-            <Button style={PrimaryButtonStyle} click={handelNotificationPref}>
+            <Button style={PrimaryButtonStyle} click={handleNotificationPref}>
               <p className="mb-0" style={ButtonTextStyle}>
                 Next
               </p>

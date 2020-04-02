@@ -85,10 +85,10 @@ function PersonalDetailsForm(props) {
             <p className={`${Styles.labelText} pb-1 mb-0`}>Married</p>
             <div className="d-flex align-items-center justify-content-center justify-content-md-start">
               <div
-                className={`px-3 py-1 ${
+                className={`px-3 py-1 mx-1 ${
                   married === "YES" ? Styles.activeTab : Styles.tab
                 }`}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", borderRadius: "8px" }}
                 onClick={() => setMarried("YES")}
               >
                 <p
@@ -100,10 +100,10 @@ function PersonalDetailsForm(props) {
                 </p>
               </div>
               <div
-                className={`px-3 py-1 ${
+                className={`px-3 py-1 mx-1 ${
                   married === "NO" ? Styles.activeTab : Styles.tab
                 }`}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", borderRadius: "8px" }}
                 onClick={() => setMarried("NO")}
               >
                 <p
