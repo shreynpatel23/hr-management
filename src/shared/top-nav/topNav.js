@@ -5,7 +5,7 @@ import { Colors } from "../colors";
 
 function TopNav() {
   const [showSideBarOnMobile, setShowSideBarOnMobile] = React.useState(false);
-  function handelMobileSidebar() {
+  function handleMobileSidebar() {
     setShowSideBarOnMobile(true);
   }
   function hideSideBar() {
@@ -24,7 +24,7 @@ function TopNav() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 37 31"
             style={{ fill: "#557baf", cursor: "pointer" }}
-            onClick={handelMobileSidebar}
+            onClick={handleMobileSidebar}
             className={Styles.hamburger}
           >
             <g

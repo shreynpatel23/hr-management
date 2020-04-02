@@ -7,7 +7,7 @@ import classes from "./notificationSettings.module.scss";
 
 function NotificationSettings() {
   const [edit, setEdit] = React.useState(false);
-  function handelSaveChanges() {
+  function handleSaveChanges() {
     setEdit(false);
     console.log("save changes clicked");
   }
@@ -134,7 +134,7 @@ function NotificationSettings() {
               </p>
             </div>
             <div className="d-inline-flex">
-              <Button style={PrimaryButtonStyle} click={handelSaveChanges}>
+              <Button style={PrimaryButtonStyle} click={handleSaveChanges}>
                 <p className="mb-0" style={ButtonTextStyle}>
                   Save
                 </p>

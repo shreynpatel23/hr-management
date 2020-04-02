@@ -19,7 +19,7 @@ function SideBar(props) {
   function CustomToggle({ children, onClick }) {
     return <div onClick={onClick}>{children}</div>;
   }
-  function handelChangeSettingsTab(value) {
+  function handleChangeSettingsTab(value) {
     history.push(`/application/settings/${value}`);
     setActiveSettingsTab(value);
   }
@@ -125,7 +125,7 @@ function SideBar(props) {
                         : Styles.subTab
                     }`}
                     onClick={() =>
-                      handelChangeSettingsTab("notification-settings")
+                      handleChangeSettingsTab("notification-settings")
                     }
                   >
                     Notification Settings
@@ -138,7 +138,7 @@ function SideBar(props) {
                         ? Styles.activeSubTab
                         : Styles.subTab
                     }`}
-                    onClick={() => handelChangeSettingsTab("my-accounts")}
+                    onClick={() => handleChangeSettingsTab("my-accounts")}
                   >
                     My Accounts
                   </p>
@@ -150,7 +150,7 @@ function SideBar(props) {
                         ? Styles.activeSubTab
                         : Styles.subTab
                     }`}
-                    onClick={() => handelChangeSettingsTab("roles-permission")}
+                    onClick={() => handleChangeSettingsTab("roles-permission")}
                   >
                     Roles and Permission
                   </p>
@@ -162,7 +162,7 @@ function SideBar(props) {
                         ? Styles.activeSubTab
                         : Styles.subTab
                     }`}
-                    onClick={() => handelChangeSettingsTab("members")}
+                    onClick={() => handleChangeSettingsTab("members")}
                   >
                     Members
                   </p>

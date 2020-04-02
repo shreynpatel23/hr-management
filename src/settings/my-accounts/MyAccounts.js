@@ -6,8 +6,8 @@ import { PrimaryButtonStyle, ButtonTextStyle } from "../../shared/buttonStyles";
 import classes from "./MyAccounts.module.scss";
 
 function MyAccounts() {
-  function handelSaveChanges() {
-    // handel this function
+  function handleSaveChanges() {
+    // handle this function
     setEdit(false);
     console.log("save changes clicked");
   }
@@ -39,7 +39,7 @@ function MyAccounts() {
               </p>
             </div>
             <div className="d-inline-flex">
-              <Button style={PrimaryButtonStyle} click={handelSaveChanges}>
+              <Button style={PrimaryButtonStyle} click={handleSaveChanges}>
                 <p className="mb-0" style={ButtonTextStyle}>
                   Save
                 </p>

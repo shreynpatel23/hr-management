@@ -15,8 +15,8 @@ function AddMember({ onAddMember, onCancelAddMember }) {
     console.log("add member clicked");
     onAddMember();
   }
-  function handelUploadCSV() {
-    console.log("handel upload csv here");
+  function handleUploadCSV() {
+    console.log("handle upload csv here");
   }
   return (
     <div
@@ -42,7 +42,7 @@ function AddMember({ onAddMember, onCancelAddMember }) {
                   <div
                     className="d-flex align-items-center"
                     style={{ cursor: "pointer" }}
-                    onClick={handelUploadCSV}
+                    onClick={handleUploadCSV}
                   >
                     <div className="px-1">
                       <img
