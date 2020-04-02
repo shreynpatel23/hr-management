@@ -4,9 +4,10 @@ import classes from "./addMember.module.scss";
 import PersonalDetailsForm from "../../../shared/personal-details-form/personalDetailsForm";
 import {
   PrimaryButtonStyle,
-  ButtonTextStyle
+  ButtonTextStyle,
+  secondaryButtonStyle,
+  secondaryButtonTextStyle
 } from "../../../shared/buttonStyles";
-import CommonStyles from "../../../shared/sharedStyles.module.scss";
 import Button from "../../../shared/button/button";
 import uploadButton from "../../../assets/images/upload.png";
 
@@ -29,12 +30,17 @@ function AddMember({ onAddMember, onCancelAddMember }) {
           </div>
           <div className="py-3 d-flex align-items-center justify-content-between">
             <div className="px-3">
-              <p
-                className={`mb-0 ${CommonStyles.cancelText}`}
-                onClick={() => onCancelAddMember()}
+              <Button
+                style={secondaryButtonStyle}
+                click={() => onCancelAddMember()}
               >
-                Cancel
-              </p>
+                <p
+                  className={`mb-0 ${classes.responsiveText}`}
+                  style={secondaryButtonTextStyle}
+                >
+                  Cancel
+                </p>
+              </Button>
             </div>
             <div>
               <div className="d-flex align-items-center">

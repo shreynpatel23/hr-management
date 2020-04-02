@@ -2,7 +2,12 @@ import React from "react";
 import CommonStyles from "../../shared/sharedStyles.module.scss";
 import Styles from "../../notification-prefrences/notificationPrefrences.module.scss";
 import Button from "../../shared/button/button";
-import { PrimaryButtonStyle, ButtonTextStyle } from "../../shared/buttonStyles";
+import {
+  PrimaryButtonStyle,
+  ButtonTextStyle,
+  secondaryButtonStyle,
+  secondaryButtonTextStyle
+} from "../../shared/buttonStyles";
 import classes from "./notificationSettings.module.scss";
 
 function NotificationSettings() {
@@ -126,12 +131,14 @@ function NotificationSettings() {
         {edit ? (
           <div className={`d-flex align-items-center justify-content-between`}>
             <div className="px-2">
-              <p
-                className={`mb-0 ${CommonStyles.cancelText}`}
-                onClick={() => setEdit(false)}
-              >
-                Cancel
-              </p>
+              <Button style={secondaryButtonStyle} click={() => setEdit(false)}>
+                <p
+                  className={`mb-0 ${classes.responsiveText}`}
+                  style={secondaryButtonTextStyle}
+                >
+                  Cancel
+                </p>
+              </Button>
             </div>
             <div className="d-inline-flex">
               <Button style={PrimaryButtonStyle} click={handleSaveChanges}>
