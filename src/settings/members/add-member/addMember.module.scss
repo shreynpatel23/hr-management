@@ -17,11 +17,6 @@
     color: $primaryColor;
 }
 
-.imgSize {
-    width: 25px;
-    height: 25px;
-}
-
 @media screen and (min-width : 331px) and (max-width: 410px) {
     .formWrapper {
         max-height: 500px;
