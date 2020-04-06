@@ -6,20 +6,39 @@ import CommonStyles from "../shared/sharedStyles.module.scss";
 import { PrimaryButtonStyle, ButtonTextStyle } from "../shared/buttonStyles";
 import { useHistory } from "react-router-dom";
 import Logo from "../shared/logo/logo";
+import ErrorMessage from "../shared/error-message/errorMessage";
+import Toast from "../shared/toast/toast";
+import { useEffect } from "react";
 
 function Login() {
   const [employeeId, setEmployeeId] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState({
     employeeId: "",
-    password: ""
+    password: "",
+  });
+  const [showToast, setShowToast] = React.useState(false);
+  const [toast, setToast] = React.useState({
+    type: "",
+    message: "",
   });
   let history = useHistory();
+  // useEffect(() => {
+  //   setShowToast(true);
+  //   setToast((toast) => ({
+  //     ...toast,
+  //     type: "error",
+  //     message: "please enter a message here",
+  //   }));
+  //   setTimeout(() => {
+  //     setShowToast(false);
+  //   }, 5000);
+  // }, []);
   function checkEmployeeID() {
     if (!employeeId) {
-      setError(error => ({
+      setError((error) => ({
         ...error,
-        employeeId: "Employee id cannot be Empty"
+        employeeId: "Employee id cannot be Empty",
       }));
       return false;
     }
@@ -27,9 +46,9 @@ function Login() {
   }
   function checkPassword() {
     if (!password) {
-      setError(error => ({
+      setError((error) => ({
         ...error,
-        password: "Password cannot be Empty"
+        password: "Password cannot be Empty",
       }));
       return false;
     }
@@ -49,6 +68,7 @@ function Login() {
   }
   return (
     <div className={`${CommonStyles.background}`}>
+      {showToast ? <Toast type={toast.type} message={toast.message} /> : null}
       <div className={`${CommonStyles.logoBranding}`}>
         <Logo />
       </div>
@@ -61,40 +81,48 @@ function Login() {
             <div className="form-group">
               <Input
                 type="text"
-                placeholder={
-                  error.employeeId ? error.employeeId : "Enter Employee ID"
-                }
+                placeholder="Enter Employee ID"
                 haserror={error.employeeId}
                 name="employeeId"
                 id="employeeId"
                 autoComplete="off"
-                onChange={event => {
+                onChange={(event) => {
                   setEmployeeId(event.target.value);
-                  setError(error => ({
+                  setError((error) => ({
                     ...error,
-                    employeeId: ""
+                    employeeId: "",
                   }));
                 }}
                 onBlur={checkEmployeeID}
               />
+              {error.employeeId ? (
+                <ErrorMessage>
+                  <p className="mb-0">{error.employeeId}</p>
+                </ErrorMessage>
+              ) : null}
             </div>
             <div className="form-group">
               <Input
                 type="password"
-                placeholder={error.password ? error.password : "Enter Password"}
+                placeholder="Enter Password"
                 haserror={error.password}
                 name="password"
                 id="password"
                 autoComplete="off"
-                onChange={event => {
+                onChange={(event) => {
                   setPassword(event.target.value);
-                  setError(error => ({
+                  setError((error) => ({
                     ...error,
-                    password: ""
+                    password: "",
                   }));
                 }}
                 onBlur={checkPassword}
               />
+              {error.password ? (
+                <ErrorMessage>
+                  <p className="mb-0">{error.password}</p>
+                </ErrorMessage>
+              ) : null}
               <div className="d-flex align-items-center justify-content-end py-2">
                 <p
                   className={`mb-0 ${Styles.forgotPasswordText}`}

@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "../../personal-details/personalDetails.module.scss";
 import Input from "../input/input";
+import ErrorMessage from "../error-message/errorMessage";
 
 function PersonalDetailsForm(props) {
   const [married, setMarried] = React.useState("YES");
@@ -23,6 +24,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
               <Input
@@ -33,6 +35,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
               <Input
@@ -43,6 +46,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
           </div>
           <div className="col-md-6">
@@ -55,6 +59,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
               <Input
@@ -65,6 +70,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
               <Input
@@ -75,6 +81,7 @@ function PersonalDetailsForm(props) {
                 autoComplete="off"
                 disabled={props.disabled}
               />
+              {/* <ErrorMessage /> */}
             </div>
           </div>
         </div>
