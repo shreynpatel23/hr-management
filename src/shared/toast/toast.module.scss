@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables.scss';
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    animation: slide 0.5s ease-in forwards;
+}
+
+.successBackground {
+    border-radius: $borderRadius8;
+    padding: 15px 30px;
+    width: 100%;
+    background: rgba($success, $alpha: 0.2);
+    color: $success;
+    border: 1px solid $success
+}
+
+.errorBackground {
+    border-radius: $borderRadius8;
+    padding: 15px 30px;
+    width: 100%;
+    background: rgba($error, $alpha: 0.2);
+    color: $error;
+    border: 1px solid $error
+}
+
+@keyframes slide {
+    0% {
+        right: -400px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
