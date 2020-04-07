@@ -4,17 +4,26 @@ import Styles from "./input.module.scss";
 function Input(props) {
   return (
     <div>
-      <fieldset className={Styles.fieldSet}>
-        <legend className={`${Styles.legendText} px-2 mx-3 mb-0`}>
-          {props.labelname}
-        </legend>
-        <input
-          className={`${
-            props.haserror ? Styles.error : Styles.formControl
-          } shadow-none`}
-          {...props}
-        />
-      </fieldset>
+      {props.children ? (
+        <fieldset className={Styles.fieldSet}>
+          <legend className={`${Styles.legendText} px-2 mx-3 mb-0`}>
+            {props.labelname}
+          </legend>
+          {props.children}
+        </fieldset>
+      ) : (
+        <fieldset className={Styles.fieldSet}>
+          <legend className={`${Styles.legendText} px-2 mx-3 mb-0`}>
+            {props.labelname}
+          </legend>
+          <input
+            className={`${
+              props.haserror ? Styles.error : Styles.formControl
+            } shadow-none`}
+            {...props}
+          />
+        </fieldset>
+      )}
     </div>
   );
 }

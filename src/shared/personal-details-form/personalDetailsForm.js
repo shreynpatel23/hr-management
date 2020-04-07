@@ -1,11 +1,14 @@
 import React from "react";
 import Styles from "../../personal-details/personalDetails.module.scss";
+import InputStyles from "../../shared/input/input.module.scss";
 import Input from "../input/input";
+import DatePicker from "react-datepicker";
 import ErrorMessage from "../error-message/errorMessage";
 
 function PersonalDetailsForm(props) {
   const [married, setMarried] = React.useState("YES");
   const [gender, setGender] = React.useState("Male");
+  const [date, setDate] = React.useState();
   return (
     <form className="py-2">
       <div className="container-fluid">
@@ -66,27 +69,34 @@ function PersonalDetailsForm(props) {
               {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
-              <Input
-                type="text"
-                labelname="Date of Birth"
-                placeholder="Date of Birth"
-                name="dateOfBirth"
-                id="dateOfBirth"
-                autoComplete="off"
-                disabled={props.disabled}
-              />
+              <Input labelname="Date of Birth">
+                <DatePicker
+                  placeholderText="Enter date"
+                  className={InputStyles.formControl}
+                  selected={date}
+                  disabled={props.disabled}
+                  style={{ width: "100%" }}
+                  onChange={(event) => {
+                    console.log(event);
+                  }}
+                />
+              </Input>
+
               {/* <ErrorMessage /> */}
             </div>
             <div className="form-group py-3">
-              <Input
-                type="text"
-                labelname="Date of Joining"
-                placeholder="Date of Joining"
-                name="dateOfJoining"
-                id="dateOfJoining"
-                autoComplete="off"
-                disabled={props.disabled}
-              />
+              <Input labelname="Date of Joining">
+                <DatePicker
+                  placeholderText="Enter date"
+                  className={InputStyles.formControl}
+                  disabled={props.disabled}
+                  selected={date}
+                  style={{ width: "100%" }}
+                  onChange={(event) => {
+                    console.log(event);
+                  }}
+                />
+              </Input>
               {/* <ErrorMessage /> */}
             </div>
           </div>
