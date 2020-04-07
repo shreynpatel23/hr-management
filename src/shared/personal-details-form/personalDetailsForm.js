@@ -14,6 +14,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="text"
+                labelname="Employee ID"
                 placeholder="Employee ID"
                 // conditional rendering for placeholder for error
                 // placeholder={error.employeeId ? error.employeeId : 'Enter Employee ID'}
@@ -29,6 +30,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="email"
+                labelname="Email"
                 placeholder="Email"
                 name="email"
                 id="email"
@@ -40,6 +42,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="number"
+                labelname="Phone Number"
                 placeholder="Phone number"
                 name="phoneNumber"
                 id="phoneNumber"
@@ -53,6 +56,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="text"
+                labelname="Full Name"
                 placeholder="Full Name"
                 name="fullName"
                 id="fullName"
@@ -64,6 +68,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="text"
+                labelname="Date of Birth"
                 placeholder="Date of Birth"
                 name="dateOfBirth"
                 id="dateOfBirth"
@@ -75,6 +80,7 @@ function PersonalDetailsForm(props) {
             <div className="form-group py-3">
               <Input
                 type="text"
+                labelname="Date of Joining"
                 placeholder="Date of Joining"
                 name="dateOfJoining"
                 id="dateOfJoining"

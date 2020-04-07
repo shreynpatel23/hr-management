@@ -81,6 +81,7 @@ function Login() {
             <div className="form-group">
               <Input
                 type="text"
+                labelname="Employee ID"
                 placeholder="Enter Employee ID"
                 haserror={error.employeeId}
                 name="employeeId"
@@ -104,6 +105,7 @@ function Login() {
             <div className="form-group">
               <Input
                 type="password"
+                labelname="Password"
                 placeholder="Enter Password"
                 haserror={error.password}
                 name="password"
