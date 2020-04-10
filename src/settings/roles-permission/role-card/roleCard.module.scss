@@ -4,6 +4,7 @@
   width: 100%;
   background: $white;
   border-radius: $borderRadius8;
+  box-shadow: $box-shadow;
 }
 
 .formWrapper {
@@ -28,6 +29,7 @@
   .formWrapper {
     padding: 10px;
   }
+
   .key {
     font-size: $font-14;
   }

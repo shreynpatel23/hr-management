@@ -90,7 +90,7 @@ function Members() {
           <div className={` ${classes.headerWidth}`}>
             <div className={`container-fluid py-2`}>
               <div className={`row m-0 ${classes.membersHeading}`}>
-                <div className="col-3">
+                <div className="col-2">
                   <p className={`mb-0 ${classes.header}`}>Employee ID</p>
                 </div>
                 <div className="col-3">

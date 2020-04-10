@@ -20,6 +20,20 @@
     overflow-y: scroll;
 }
 
+.accordionToggle {
+    background: $white;
+    border-radius: $borderRadius8;
+    box-shadow: $box-shadow;
+}
+
+.accordionToggleContent {
+    border-bottom-left-radius: $borderRadius8;
+    border-bottom-right-radius: $borderRadius8;
+    border-left: 1px solid $textColor;
+    border-right: 1px solid $textColor;
+    border-bottom: 1px solid $textColor;
+}
+
 @media screen and (max-width: 767px) {
     .responsiveText {
         font-size: 14px;

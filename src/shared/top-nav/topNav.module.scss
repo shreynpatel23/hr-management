@@ -5,46 +5,45 @@
     padding: 20px 10px;
     box-shadow: 10px 2px 7px 0 rgba(0, 0, 0, 0.16);
 }
-.companyName {
-    font-size: $font-16;
-    font-weight: 500;
-    text-align: left;
-    color: $textColor;
-}
+
 .employeeName {
     font-size: $font-16;
     font-weight: 500;
     text-align: left;
     color: $primaryColor;
 }
+
 .logout {
     font-size: $font-14;
     font-weight: 500;
     text-align: left;
     color: $textColor;
 }
+
 .showOnMobile {
     display: none;
 }
+
 @media screen and (max-width: 767px) {
     .hamburger {
         width: 20px;
         height: 20px;
     }
+
     .topNavBackground {
         padding: 10px 5px;
     }
-    .companyName {
-        font-size: 12px;
-    }
+
     .employeeName {
         font-size: 12px;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .showOnMobile {
         display: block;
     }
+
     .hamburger {
         width: 25px;
         height: 25px;

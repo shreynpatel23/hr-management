@@ -25,11 +25,9 @@ function Feeds() {
   //   }, 3000);
   // }, []);
   return (
-    <div>
+    <div className={classes.feedsPageHeight}>
       {loading ? (
-        <div style={{ height: "80vh" }}>
-          <Loading />
-        </div>
+        <Loading />
       ) : (
         <div className={classes.feedsWidth}>
           <div className={classes.postCard}>

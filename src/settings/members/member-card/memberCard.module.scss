@@ -6,6 +6,16 @@
     color: $textColor;
 }
 
+.showOnHover {
+    display: none;
+}
+
+.memberCard:hover {
+    .showOnHover {
+        display: block;
+    }
+}
+
 .memberCard {
     width: 100%;
     padding: 15px;
@@ -22,6 +32,7 @@
     color: $textColor;
 }
 
+
 .dropdown:focus {
     outline: none;
 }
@@ -29,5 +40,12 @@
 @media screen and (max-width:767px) {
     .memberCard {
         width: 670px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .showOnHover {
+        display: block;
     }
 }
