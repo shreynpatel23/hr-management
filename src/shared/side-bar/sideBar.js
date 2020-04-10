@@ -38,9 +38,10 @@ function SideBar(props) {
       className={`${Styles.sideBarBackground} sticky-top`}
       style={{ zIndex: 2 }}
     >
-      <div className="py-2 d-flex align-items-center" style={{ height: "10%" }}>
+      <div className="py-2 d-flex align-items-center" style={{ height: "8%" }}>
+        <img src={logo} alt="logo" className={imgStyle.imgSize} />
         <div className="px-2">
-          <img src={logo} alt="logo" className={imgStyle.imgSize} />
+          <p className={`mb-0 ${Styles.companyName}`}>Company name</p>
         </div>
         <div
           className={`px-2 ml-auto ${Styles.showOnMobile}`}
@@ -49,7 +50,7 @@ function SideBar(props) {
           <CrossSvg color={Colors.TEXTCOLOR} />
         </div>
       </div>
-      <div style={{ height: "90%" }}>
+      <div style={{ height: "92%" }}>
         <Accordion defaultActiveKey="0" activeKey={activeKey}>
           <div className="py-3">
             <CustomToggle

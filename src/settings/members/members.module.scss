@@ -98,6 +98,10 @@
     .headerWidth {
         width: 700px;
     }
+
+    .header {
+        font-size: $font-14;
+    }
 }
 
 @media screen and (max-width: 768px) {

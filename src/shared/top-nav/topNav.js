@@ -59,9 +59,6 @@ function TopNav() {
             </g>
           </svg>
         </div>
-        <div className="px-2">
-          <p className={`mb-0 ${Styles.companyName}`}>Company name</p>
-        </div>
         <div className="px-2 ml-auto">
           <p className={`mb-0 ${Styles.employeeName}`}>Hey, Name here</p>
         </div>
